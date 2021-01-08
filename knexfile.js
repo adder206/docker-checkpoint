@@ -4,9 +4,13 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/db-checkpoint'
- 
+    connection: {
+      host:'database',
+      password:'password',
+      database:'postgres',
+      user:'postgres'
       },
+    },
     
 
   staging: {
